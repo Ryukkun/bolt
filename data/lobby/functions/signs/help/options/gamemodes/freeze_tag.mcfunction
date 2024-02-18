@@ -1,0 +1,2 @@
+tellraw @s {"text":"\n\n\n\nFreeze Tag\n","color":"dark_blue","bold":true,"underlined":true}
+tellraw @s {"text":"In Freeze Tag, shoot enemy team members to freeze them. Be the last team standing to win. Use the Refreeze and Unfreeze items to save your teammates, or stop the enemies from saving theirs.\n","color":"aqua"}

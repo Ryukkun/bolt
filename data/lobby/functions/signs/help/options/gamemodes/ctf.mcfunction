@@ -1,0 +1,2 @@
+tellraw @s {"text":"\n\n\n\n\nCapture the Flag (CTF)\n","color":"green","bold":true,"underlined":true}
+tellraw @s {"text":"Capture the Flag is a race to capture the enemy flag and bring it to your base! Be careful though, as the enemy is rushing to catch yours, and if they have your flag, you can't score. If you're eliminated while holding the flag, it will drop. Once dropped, simply run over it to pick it up and carry it further or return your own flag back to your base.\n","color":"aqua"}

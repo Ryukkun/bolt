@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "blowup": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_explosion": true,
+                        "direct_entity": {
+                            "type": "minecraft:creeper",
+                            "distance": {
+                                "absolute": {
+                                    "min": 0,
+                                    "max": 7
+                                }
+                            }
+                        },
+                        "source_entity": {
+                            "type": "minecraft:creeper"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kill_handle:blownup"
+    }
+}

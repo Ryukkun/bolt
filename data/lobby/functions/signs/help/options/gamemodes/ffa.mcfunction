@@ -1,0 +1,2 @@
+tellraw @s {"text":"\n\n\n\nFree For All (FFA)\n","color":"gold","bold":true,"underlined":true}
+tellraw @s {"text":"In Free For All, leave teams behind and race to the elimination goal first. Everyone plays solo, and everyone is a target!\n","color":"aqua"}

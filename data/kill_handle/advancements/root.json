@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": "arrow kill",
+        "description": "Arrow hitting",
+        "icon": {
+            "item": "minecraft:arrow"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "general": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "source_entity": {
+                            "type": "player"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
