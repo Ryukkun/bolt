@@ -2,6 +2,7 @@
 # kill_handle:killed/freeze/core | called by kill_handle:killed/freeze/freeze & kill_handle:killed/freeze/error
 # @s = player to freeze
 summon armor_stand ~ ~ ~ {NoGravity:0b,Invulnerable:1b,Invisible:1b,Tags:["freeze","map","idsystem"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:ice",Count:1b}]}
+replaceitem entity @s armor.head ice{HideFlags:3,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-100,Operation:0,UUID:[I;1555306611,1938049151,-1910531808,-814306379]}]}
 scoreboard players operation @e[type=armor_stand,tag=freeze,distance=..0.2,sort=nearest] gm_id = @s gm_id
 tag @s add frozen
 
