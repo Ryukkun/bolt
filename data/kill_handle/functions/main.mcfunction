@@ -3,7 +3,7 @@
 #id arrows
 execute as @e[type=arrow,tag=!setup] at @s run function kill_handle:setup_arrow
 #tp traces to the arrow
-execute as @e[type=area_effect_cloud,tag=kh_arrow,tag=kh_tracer] at @e[type=arrow,tag=setup] if score @e[type=arrow,tag=setup,distance=..1,sort=nearest,limit=1] kh_arrowId = @s kh_arrowId run tp ~ ~ ~
+execute as @e[type=area_effect_cloud,tag=kh_arrow,tag=kh_tracer] at @e[type=arrow,tag=setup,distance=..5] if score @e[type=arrow,tag=setup,distance=..1,sort=nearest,limit=1] kh_arrowId = @s kh_arrowId run tp ~ ~ ~
 #kill traces
 execute as @e[type=arrow,tag=setup,nbt={inGround:1b}] if score @e[type=area_effect_cloud,distance=..1,tag=kh_tracer,tag=kh_arrow,sort=nearest,limit=1] kh_arrowId = @s kh_arrowId run kill @e[type=area_effect_cloud,distance=..1,tag=kh_tracer,tag=kh_arrow,sort=nearest,limit=1]
 kill @e[type=arrow,nbt={inGround:1b},tag=setup]
