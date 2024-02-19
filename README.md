@@ -20,4 +20,4 @@
 
 
 ## 🐎 軽量化
-- [x] (uuid_check)[https://github.com/Ryukkun/bolt/commits/main/data/kill_handle/functions/uuid_check]
+- [x] [uuid_check](https://github.com/Ryukkun/bolt/commits/main/data/kill_handle/functions/uuid_check)
