@@ -7,7 +7,7 @@ effect give @a resistance 3 6 true
 effect give @a weakness 3 6 true
 execute as @e[type=armor_stand,tag=flame] run data merge entity @s {Fire:2s}
 function player_handle:main
-function main:trapdoor_controll
+
 
 ## --- Phase 0 --- Lobby
 execute if score gameState cm_main matches 0 run function lobby:main
