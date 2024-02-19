@@ -8,6 +8,7 @@ execute if score map cm_main matches 2 unless score gameMode cm_main matches 2 r
 execute if score map cm_main matches 3 unless score gameMode cm_main matches 2 run tp @a 547 41 -68
 execute if score map cm_main matches 4 unless score gameMode cm_main matches 2 run tp @a 1208.50 29 -72.50
 execute if score map cm_main matches 5 unless score gameMode cm_main matches 2 run tp @a 1550.5 17 -115.5
+execute if score map cm_main matches 100 unless score gameMode cm_main matches 2 run tp @a 1068 23 -118
 
 #run map set (ffa)
 execute if score map cm_main matches 0 if score gameMode cm_main matches 2 run tp @a 781 24 -36
@@ -21,4 +22,4 @@ execute if score map cm_main matches 2 if score gameMode cm_main matches 2 run t
 #3 cavernns, Nether
 #4 space
 #5 Nation
-#6 
+#6  fantasia

@@ -26,5 +26,4 @@ function game:init
 #3 cavernns, Nether
 #4 space
 #5 Nation
-#6 
-
+#6 fantasia
