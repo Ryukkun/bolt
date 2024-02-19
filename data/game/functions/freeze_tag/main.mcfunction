@@ -15,6 +15,9 @@ execute at @e[type=area_effect_cloud,tag=spawn] if entity @a[distance=..10] run 
 execute if score roundTime gm_main matches 100 run function game:freeze_tag/auto_freeze_warning
 execute if score roundTime gm_main matches 200.. run function game:freeze_tag/auto_freeze
 
+# 即死トラップ
+execute if score $fix_deth_trap fox_settings matches 1 as @e[type=arrow] at @s run function game:freeze_tag/fix_deth_trap
+
 ## Items
 execute as @e[type=item,tag=!freeze_tag_item,nbt={Item:{tag:{FreezeTagItem:1b}}}] at @s run function game:freeze_tag/item/check
 
