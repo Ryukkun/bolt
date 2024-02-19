@@ -1,8 +1,9 @@
 # Called when a player has been killed
 # kill_handle:killed/main | called from kill_handle:main & kill_handle:blownup
 # @s = player who was killed
+# as = at = @a[advancements={kill_handle:root=true}]
 
-tag @s[advancements={kill_handle:root=true}] add arrow_kill
+tag @s add arrow_kill
 advancement revoke @s only kill_handle:root
 
 #handles killing

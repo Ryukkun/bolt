@@ -1,6 +1,8 @@
 # Called as a arrow who has not been setup
 # kill_handling:setup_arrow | called from main:phases/in_game
 # @s = arrow
+
+# ここAECを矢に乗せるのありかも
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:12000,NoGravity:1,Tags:["kh_arrow","map","kh_tracer","gm_anti_spawn","kh_selected"]}
 #Handle player id
 data modify storage kh:uuids check_uuid set from entity @s Owner
