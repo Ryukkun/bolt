@@ -5,7 +5,7 @@ scoreboard objectives setdisplay sidebar
 execute at @e[type=minecraft:armor_stand,tag=start,tag=sign] run setblock ~ ~ ~ air
 
 #Handle options
-execute if score map cm_main matches -1 run function lobby:options/option/map/random
+execute if score map cm_main matches -1 run function lobby:options/option/map/random/main
 
 #prep players
 execute unless score gameMode cm_main matches 2 run team join 9spectator @a[tag=lobby]

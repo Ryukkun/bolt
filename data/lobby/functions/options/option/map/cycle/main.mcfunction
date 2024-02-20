@@ -1,5 +1,5 @@
 # called when the display gets out of sync with the map id
-# lobby:options/option/map/cycle/main | called from lobby:options/option/map/random
+# lobby:options/option/map/cycle/main | called from lobby:options/option/map/random/main
 
 scoreboard players operation temp_map cm_miscellaneous = map cm_main
 
