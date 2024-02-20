@@ -4,11 +4,6 @@
 ### --- Scoreboards --- ###
 # Ryukkun_
 scoreboard objectives add fox_settings dummy
-scoreboard objectives add fox_x1_arrow dummy
-scoreboard objectives add fox_x2_arrow dummy
-scoreboard objectives add fox_z1_arrow dummy
-scoreboard objectives add fox_z2_arrow dummy
-scoreboard objectives add fox_dethTrapTime dummy
 
 # FFA
 scoreboard objectives add ffa_bowShot minecraft.used:minecraft.bow
