@@ -4,7 +4,6 @@
 # as = at = @a[advancements={kill_handle:root=true}]
 
 tag @s add arrow_kill
-advancement revoke @s only kill_handle:root
 
 #handles killing
 execute as @s[scores={kh_killedby=1..},tag=!shielded,tag=!respawned] unless score gameMode cm_main matches 3 at @s run function kill_handle:killed/killed
