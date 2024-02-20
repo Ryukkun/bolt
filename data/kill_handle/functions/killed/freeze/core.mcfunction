@@ -1,7 +1,7 @@
 # Called when a player to be forzen and given all the correct settings
 # kill_handle:killed/freeze/core | called by kill_handle:killed/freeze/freeze & kill_handle:killed/freeze/error
 # @s = player to freeze
-summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:0b,Invulnerable:1b,Invisible:1b,Tags:["freeze","map","idsystem"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:ice",Count:1b}]}
+summon armor_stand ~ ~ ~ {NoGravity:0b,Invulnerable:1b,Invisible:1b,Tags:["freeze","map","idsystem"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:ice",Count:1b}]}
 scoreboard players operation @e[type=armor_stand,tag=freeze,distance=..0.2,sort=nearest] gm_id = @s gm_id
 tag @s add frozen
 

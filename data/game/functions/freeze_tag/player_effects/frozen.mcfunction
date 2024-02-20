@@ -3,7 +3,7 @@
 # @s = frozen player
 
 # standard effects
-execute at @e[type=minecraft:armor_stand,tag=freeze] if score @e[distance=0,limit=1,type=minecraft:armor_stand] gm_id = @s gm_id positioned ~ ~ ~ unless entity @s[distance=..0.1] run tp @s ~ ~ ~
+execute at @e[type=minecraft:armor_stand,tag=freeze] if score @e[distance=..0.01,limit=1,type=minecraft:armor_stand] gm_id = @s gm_id unless entity @s[distance=..0.1] run tp @s ~ ~ ~
 effect give @s[scores={cm_hunger=..4}] saturation 1 0 true
 effect give @s jump_boost 1 128 true
 

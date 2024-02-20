@@ -4,6 +4,11 @@
 ### --- Scoreboards --- ###
 # Ryukkun_
 scoreboard objectives add fox_settings dummy
+scoreboard objectives add fox_x1_arrow dummy
+scoreboard objectives add fox_x2_arrow dummy
+scoreboard objectives add fox_z1_arrow dummy
+scoreboard objectives add fox_z2_arrow dummy
+scoreboard objectives add fox_dethTrapTime dummy
 
 # FFA
 scoreboard objectives add ffa_bowShot minecraft.used:minecraft.bow
@@ -197,8 +202,10 @@ scoreboard players add gameState cm_main 0
 scoreboard players add map cm_main 0
 scoreboard players add gameMode cm_main 0
 
-scoreboard players set teamMapCount cm_main 6
+scoreboard players set teamMapCount cm_main 7
+scoreboard players set randomTeamMapCount cm_main 6
 scoreboard players set ffaMapCount cm_main 3
+scoreboard players set randomFfaMapCount cm_main 3
 
 scoreboard players add $players gm_id 0
 scoreboard players add $arrows kh_arrowId 0

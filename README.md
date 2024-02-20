@@ -17,8 +17,10 @@
 - [x] MCID変更時にバグる
 - [x] フリーズ時に動くと視点がリセットされる
 - [x] 即死トラップ
+- [x] キルログが正確ではない場合がある 
 - [ ] フレンドリーファイヤー (ON/OFF)
 
 
 ## 🐎 軽量化
 - [x] [uuid_check](https://github.com/Ryukkun/bolt/commits/main/data/kill_handle/functions/uuid_check)
+- [x] 打たれた矢の処理を変更

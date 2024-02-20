@@ -16,8 +16,7 @@ execute if score roundTime gm_main matches 100 run function game:freeze_tag/auto
 execute if score roundTime gm_main matches 200.. run function game:freeze_tag/auto_freeze
 
 # 即死トラップ
-# armorstandをmarkerに変更
-# function kill_handle:killed/freeze/core
+execute as @e[type=arrow] at @s run function game:freeze_tag/fix_deth_trap
 
 ## Items
 execute as @e[type=item,tag=!freeze_tag_item,nbt={Item:{tag:{FreezeTagItem:1b}}}] at @s run function game:freeze_tag/item/check

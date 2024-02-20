@@ -2,7 +2,7 @@
 # kill_handle:main | called from main:phases/in_game
 
 #kill arrow
-kill @e[type=arrow,tag=setup,nbt={inGround:1b}]
+kill @e[type=arrow,nbt={inGround:1b}]
 
 # -- 矢を打ったプレイヤー・打たれたプレイヤーの処理は 実績で処理 --
 
