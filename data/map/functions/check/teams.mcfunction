@@ -5,6 +5,7 @@ execute if score map cm_main matches 2 run function map:check/teams/warehouse
 execute if score map cm_main matches 3 run function map:check/teams/caverns
 execute if score map cm_main matches 4 run function map:check/teams/space
 execute if score map cm_main matches 5 run function map:nation/check
+execute if score map cm_main matches 6 run function map:fantasia/check
 
 scoreboard players reset loadingTime cm_miscellaneous
 
@@ -18,3 +19,4 @@ execute if score gameMode cm_main matches 3..4 if score pointsLoaded cm_miscella
 #3 caverns
 #4 space
 #5 nation
+#6 fantasia

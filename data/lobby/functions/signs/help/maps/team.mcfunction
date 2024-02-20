@@ -8,3 +8,4 @@ execute if score map cm_main matches 2 run function lobby:signs/help/maps/wareho
 execute if score map cm_main matches 3 run function lobby:signs/help/maps/caverns
 execute if score map cm_main matches 4 run function lobby:signs/help/maps/space
 execute if score map cm_main matches 5 run function lobby:signs/help/maps/nation
+execute if score map cm_main matches 6 run function lobby:signs/help/maps/fantasia
