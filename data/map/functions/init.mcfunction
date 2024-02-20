@@ -11,6 +11,7 @@ execute if score map cm_main matches 2 unless score gameMode cm_main matches 2 r
 execute if score map cm_main matches 3 unless score gameMode cm_main matches 2 run function map:caverns/setup
 execute if score map cm_main matches 4 unless score gameMode cm_main matches 2 run function map:space/setup
 execute if score map cm_main matches 5 unless score gameMode cm_main matches 2 run function map:nation/setup
+execute if score map cm_main matches 6 unless score gameMode cm_main matches 2 run function map:fantasia/setup
 
 #run map set (ffa)
 execute if score map cm_main matches 0 if score gameMode cm_main matches 2 run function map:fuji/setup
