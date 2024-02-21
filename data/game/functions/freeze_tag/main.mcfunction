@@ -11,7 +11,10 @@ replaceitem entity @a[team=3red,tag=!frozen] hotbar.2 minecraft:ice{keepitem:1b,
 execute as @a[tag=frozen] at @s run function game:freeze_tag/player_effects/frozen
 
 # auto freeze/round time
-execute at @e[type=area_effect_cloud,tag=spawn] if entity @a[distance=..10] run function game:freeze_tag/auto_freeze/main
+# ↓おそらく必要なし
+#execute at @e[type=area_effect_cloud,tag=spawn] if entity @a[distance=..10] run function game:freeze_tag/auto_freeze/main
+
+# roundTime gm_main は 時間が決められている場合にのみ進行する
 execute if score roundTime gm_main matches 100 run function game:freeze_tag/auto_freeze_warning
 execute if score roundTime gm_main matches 200.. run function game:freeze_tag/auto_freeze
 
