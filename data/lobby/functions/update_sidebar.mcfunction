@@ -28,3 +28,8 @@ execute if score map cm_main matches 2 if score gameMode cm_main matches 2 run s
 #execute if score map cm_main matches 3 if score gameMode cm_main matches 2 run scoreboard players set §6Neather lb_display 0
 
 execute if score map cm_main matches -1 run scoreboard players set §6Random lb_display 0
+
+
+# Version表記
+scoreboard players set §r§r lb_display -1
+scoreboard players set §7Ver:1.4.0+0.0.1 lb_display -2
