@@ -32,4 +32,4 @@ execute if score map cm_main matches -1 run scoreboard players set §6Random lb_
 
 # Version表記
 scoreboard players set §r§r lb_display -1
-scoreboard players set §7Ver:1.4.0+0.0.1 lb_display -2
+scoreboard players set §7Ver:1.4.0+0.0.0 lb_display -2
