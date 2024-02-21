@@ -2,7 +2,7 @@
 # game:freeze_tag/player_effects/defrosted | Caled from game:freeze_tag/player_effects/frozen
 # @s = frozen player
 
-execute as @e[sort=nearest,tag=freeze,type=armor_stand,distance=..2] if score @s gm_id = @p[distance=..0.8] gm_id run kill @s
+execute as @e[sort=nearest,tag=freeze,type=armor_stand,distance=..2] if score @s gm_id = @p[distance=..0.001] gm_id run kill @s
 team join 3red @s[team=4frozen_red]
 team join 1blue @s[team=2frozen_blue]
 tag @s remove frozen
