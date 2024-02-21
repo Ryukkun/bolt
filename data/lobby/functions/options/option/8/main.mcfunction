@@ -2,7 +2,7 @@
 # lobby:options/option/8/main | called by lobby:options/option/check
 # @s = player with a options trigger of 8
 
-scoreboard players add killstreaks gm_options 1
-execute if score killstreaks gm_options matches 2.. run scoreboard players set killstreaks gm_options 0
+execute if score gameMode cm_main matches 3 run function lobby:options/option/8/freeze_tag
+execute unless score gameMode cm_main matches 3 run function lobby:options/option/8/general
 
 function lobby:options/sign/8/update
