@@ -5,9 +5,6 @@ scoreboard players set $friendlyFire fox_settings 0
 scoreboard players set $collisionRule fox_settings 0
 
 
-# team 当たり判定
-function lobby:options/option/8/update_collision
-
 
 # Map追加
 data modify storage lobby:map_minis Saved.Team append value "map:mini/fantasia"

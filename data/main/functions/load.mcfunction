@@ -197,6 +197,10 @@ execute unless score setup cm_miscellaneous matches 1.. run function main:setup
 # Ryukkun
 execute unless score $setup fox_main matches 1 run function main:fox_setup
 
+# team 当たり判定
+function lobby:options/option/8/update_collision
+
+
 ### --- Scores --- ###
 scoreboard players set #second cm_miscellaneous 20
 scoreboard players set #minute cm_miscellaneous 1200
