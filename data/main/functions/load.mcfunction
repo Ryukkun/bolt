@@ -207,6 +207,9 @@ forceload add 1062 -188
 forceload add 1068 -45
 schedule function map:fantasia/set_end_gateway 10s
 
+# Version表記
+data merge storage fox:main {Version:[[1,4,0],[0,0,1]]}
+
 
 ### --- Scores --- ###
 scoreboard players set #second cm_miscellaneous 20
