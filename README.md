@@ -1,5 +1,6 @@
 # BOLT
 人知れず[**BOLT**](https://archive.crowdford.com/maps/bolt)のデータパックをアップデートしていくよの会。  
+バグったら土下座します  
 - [**新機能**](https://github.com/Ryukkun/bolt#-%E6%96%B0%E6%A9%9F%E8%83%BD)
 - [**バグ修正**](https://github.com/Ryukkun/bolt#-%E3%83%90%E3%82%B0%E4%BF%AE%E6%AD%A3)
 - [**軽量化**](https://github.com/Ryukkun/bolt#-%E8%BB%BD%E9%87%8F%E5%8C%96)
