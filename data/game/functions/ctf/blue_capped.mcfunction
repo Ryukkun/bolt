@@ -14,4 +14,4 @@ bossbar set gm:blue name ["",{"text":"Blue","color":"blue","bold":true},{"text":
 
 playsound minecraft:item.trident.thunder master @a ~ ~ ~ 5 1.8
 
-replaceitem entity @a[tag=flag,team=3red] armor.head minecraft:blue_banner{display:{Name:'{"translate":"Blue Flag","color":"blue"}',Lore:['{"text":"The Blue team\'s flag"}','{"text":"Return it to your point, but make sure your own flag is safe!"}']},HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
+item replace entity @a[tag=flag,team=3red] armor.head with minecraft:blue_banner{display:{Name:'{"translate":"Blue Flag","color":"blue"}',Lore:['{"text":"The Blue team\'s flag"}','{"text":"Return it to your point, but make sure your own flag is safe!"}']},HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}

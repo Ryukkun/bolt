@@ -18,4 +18,4 @@ execute as @s[team=4frozen_red] run playsound minecraft:item.trident.throw maste
 playsound minecraft:item.trident.return master @s ~ ~ ~ 7 1.5
 gamemode adventure @s
 clear @s #game:freeze_items
-replaceitem entity @s armor.head ice{HideFlags:3,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-100,Operation:0,UUID:[I;1555306611,1938049151,-1910531808,-814306379]}]}
+item replace entity @s armor.head with ice{HideFlags:3,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-100,Operation:0,UUID:[I;1555306611,1938049151,-1910531808,-814306379]}]}

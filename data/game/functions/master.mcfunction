@@ -1,15 +1,7 @@
-
-# effect give @a[gamemode=adventure] instant_health 5 0 true
-
-# replaceitem entity @a[gamemode=adventure,team=3red] armor.chest minecraft:leather_chestplate{display:{color:16711680},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:9999,Operation:0,UUID:[I;-1693740065,-1166130917,-1483302806,-57929458],Slot:"chest"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;222478804,-1976940782,-1939081352,1470455043]}]}
-# replaceitem entity @a[gamemode=adventure,team=1blue] armor.chest minecraft:leather_chestplate{display:{color:255},HideFlags:7,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:9999,Operation:0,UUID:[I;-1693740065,-1166130917,-1483302806,-57929458],Slot:"chest"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;222478804,-1976940782,-1939081352,1470455043]}]}
-# replaceitem entity @a[gamemode=adventure,team=1ffa] armor.chest minecraft:leather_chestplate{display:{color:9079296},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:9999,Operation:0,UUID:[I;-1693740065,-1166130917,-1483302806,-57929458],Slot:"chest"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;222478804,-1976940782,-1939081352,1470455043]}]}
-# replaceitem entity @a[gamemode=adventure,team=0ffa_leader] armor.chest minecraft:leather_chestplate{display:{color:16106496},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:9999,Operation:0,UUID:[I;-1693740065,-1166130917,-1483302806,-57929458],Slot:"chest"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;222478804,-1976940782,-1939081352,1470455043]}]}
-
 kill @e[type=item, tag=!freeze_tag_item, nbt=!{Item:{tag:{keepitem:1b}}}]
 
-replaceitem entity @a[gamemode=adventure,scores={gm_inGame=1}] container.17 arrow 4
-replaceitem entity @a[gamemode=adventure,tag=!frozen,scores={gm_inGame=1}] container.0 bow{Unbreakable:1b}
+item replace entity @a[gamemode=adventure,scores={gm_inGame=1}] container.17 with arrow 4
+item replace entity @a[gamemode=adventure,tag=!frozen,scores={gm_inGame=1}] container.0 with bow{Unbreakable:1b}
 
 scoreboard players reset PlayersInGame gm_main
 execute if score gameMode cm_main matches 2 as @a[tag=ingame] run scoreboard players add PlayersInGame gm_main 1

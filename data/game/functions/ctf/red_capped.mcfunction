@@ -14,4 +14,4 @@ bossbar set gm:red name ["",{"text":"Red","color":"red","bold":true},{"text":" -
 
 playsound minecraft:item.trident.thunder master @a ~ ~ ~ 5 1.8
 
-replaceitem entity @a[tag=flag,team=1blue] armor.head minecraft:red_banner{display:{Name:'{"translate":"Red Flag","color":"red"}',Lore:['{"text":"The Red team\'s flag"}','{"text":"Return it to your point, but make sure your own flag is safe!"}']},HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
+item replace entity @a[tag=flag,team=1blue] armor.head with minecraft:red_banner{display:{Name:'{"translate":"Red Flag","color":"red"}',Lore:['{"text":"The Red team\'s flag"}','{"text":"Return it to your point, but make sure your own flag is safe!"}']},HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
