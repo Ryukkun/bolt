@@ -1,3 +1,7 @@
 {
-    "values":[]
+  "values": [
+    "minecraft:magic",
+    "minecraft:thorns",
+    "#minecraft:is_explosion"
+  ]
 }
