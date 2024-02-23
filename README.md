@@ -8,15 +8,12 @@
 <br>
 
 ### 対応バージョン
-- **1.16.5**
-- [1.17.1 ~ 1.18.2](https://github.com/Ryukkun/bolt/tree/1.17.1)
-- [1.19.4](https://github.com/Ryukkun/bolt/tree/1.19.4)
-- [1.20.4](https://github.com/Ryukkun/bolt/tree/1.20.4)
+- **1.16.x**
+- [1.17.x ~ 1.18.x](https://github.com/Ryukkun/bolt/tree/1.17.1)
+- [1.19.x](https://github.com/Ryukkun/bolt/tree/1.19.4)
+- [1.20.x](https://github.com/Ryukkun/bolt/tree/1.20.4)
 
 <br>
-
-
-
 
 ## 入れ方
 1. [最新のrelease](https://github.com/Ryukkun/bolt/releases/latest)から`bolt.zip`をダウンロード。
