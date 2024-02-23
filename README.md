@@ -16,16 +16,16 @@
 <br>
 
 ## 入れ方
-1. [最新のrelease](https://github.com/Ryukkun/bolt/releases/latest)から`bolt.zip`をダウンロード。
+1. [最新のrelease](https://github.com/Ryukkun/bolt/releases/latest)から`bolt_xxx.zip`をダウンロード。
 2. `BOLTのワールドフォルダ > datapaks` にある`bolt`フォルダを削除。
-3. 削除した`bolt`フォルダがあった場所に *1.* でダウンロードしたbolt.zipをコピペ or 移動
+3. 削除した`bolt`フォルダがあった場所に *1.* でダウンロードした`bolt_xxx.zip`をコピペ or 移動
 
 解凍はしてもしなくてもどちらでも大丈夫です。  
 **▼ このようになっていればOK！**  
 ```
 BOLT(ワールドファイル)
   └── datapacks
-        └── bolt or bolt.zip
+        └── bolt_xxx or bolt_xxx.zip
               ├── data
               └── pack.mcmeta
 ```  
