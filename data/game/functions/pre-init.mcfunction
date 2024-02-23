@@ -19,7 +19,7 @@ tag @a remove blownup
 gamemode adventure @a
 effect give @a resistance 2 6 true
 effect give @a weakness 2 6 true
-scoreboard objectives setdisplay belowName
+scoreboard objectives setdisplay below_name
 
 clear @a[tag=!lobby]
 

@@ -1,6 +1,6 @@
 bossbar set lb:title visible true
 bossbar set gm:round_time visible false
-scoreboard objectives setdisplay belowName wins
+scoreboard objectives setdisplay below_name wins
 scoreboard objectives setdisplay sidebar lb_display
 
 #clean players
