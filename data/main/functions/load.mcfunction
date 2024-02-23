@@ -210,6 +210,12 @@ schedule function map:fantasia/set_end_gateway 10s
 # Version表記
 data merge storage fox:main {Version:[[1,4,0],[0,0,1]]}
 
+# ダメージ設定
+gamerule fallDamage false
+gamerule fireDamage false
+gamerule drowningDamage false
+
+
 
 ### --- Scores --- ###
 scoreboard players set #second cm_miscellaneous 20
