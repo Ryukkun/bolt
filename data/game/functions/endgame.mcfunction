@@ -41,8 +41,8 @@ scoreboard players set gameState cm_main 0
 scoreboard players operation lastMode st_core = gameMode cm_main
 scoreboard players operation $arrowsShot st_arrows += $arrows kh_arrowId
 scoreboard players operation $grenadesUsed st_grenades += $snowballs ks_snowballId
-execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data merge block ~ ~ ~ {Text3:"{\"score\":{\"name\":\"$arrowsShot\",\"objective\":\"stats_arrows\"},\"color\":\"yellow\",\"bold\":\"true\"}"}
-execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data merge block ~ ~ ~2 {Text3:"{\"score\":{\"name\":\"$grenadesUsed\",\"objective\":\"stats_grenades\"},\"color\":\"yellow\",\"bold\":\"true\"}"}
+execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data modify block ~ ~ ~ front_text.messages[2] set value "{\"score\":{\"name\":\"$arrowsShot\",\"objective\":\"stats_arrows\"},\"color\":\"yellow\",\"bold\":\"true\"}"
+execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data modify block ~ ~ ~2 front_text.messages[2] set value "{\"score\":{\"name\":\"$grenadesUsed\",\"objective\":\"stats_grenades\"},\"color\":\"yellow\",\"bold\":\"true\"}"
 
 #reset scores
 scoreboard players reset * killStreak

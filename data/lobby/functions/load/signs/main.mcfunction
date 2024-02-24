@@ -14,7 +14,7 @@ setblock 11 47 0 air
 setblock 11 47 2 air
 setblock 11 46 0 air
 
-setblock 11 47 -2 oak_wall_sign[facing=west]{Text2:'{"text":"Previous Map","color":"red","bold":true}',Text4:'{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 101"}}'} destroy
-setblock 11 47 0 oak_wall_sign[facing=west]{Text1:'{"text":"Gamemode","color":"aqua","bold":true}',Text4:'{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 100"}}'} destroy
-setblock 11 47 2 oak_wall_sign[facing=west]{Text2:'{"text":"Next Map","color":"green","bold":true}',Text4:'{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 102"}}'} destroy
-setblock 11 46 0 oak_wall_sign[facing=west]{Text1:'{"text":"Currently Selected","color":"gold","bold":true}',Text2:'{"text":"Map","color":"gold","bold":true}',Text4:'{"text":"[Click for info]","clickEvent":{"action":"run_command","value":"function lobby:signs/help/maps/check"}}'} destroy
+setblock 11 47 -2 oak_wall_sign[facing=west]{front_text:{messages:['""','{"text":"Previous Map","color":"red","bold":true}','""','{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 101"}}']}} destroy
+setblock 11 47 0 oak_wall_sign[facing=west]{front_text:{messages:['{"text":"Gamemode","color":"aqua","bold":true}','""','""','{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 100"}}']}} destroy
+setblock 11 47 2 oak_wall_sign[facing=west]{front_text:{messages:['""','{"text":"Next Map","color":"green","bold":true}','""','{"text":"[Click to cycle]","clickEvent":{"action":"run_command","value":"trigger lb_optionTrig set 102"}}']}} destroy
+setblock 11 46 0 oak_wall_sign[facing=west]{front_text:{messages:['{"text":"Currently Selected","color":"gold","bold":true}','{"text":"Map","color":"gold","bold":true}','""','{"text":"[Click for info]","clickEvent":{"action":"run_command","value":"function lobby:signs/help/maps/check"}}']}} destroy
