@@ -10,7 +10,7 @@ title @s times 0 80 20
 title @s title {"text":"Bolt","color":"gold","bold":true}
 title @s subtitle {"text":"by kruthers","color":"blue"}
 
-tellraw @a [{"text":"Welcome, ","color":"gold"},{"text": "","color": "white"},{"selector":"@s"},{"text":", to Bolt!","color":"gold"}]
+tellraw @a ["",{"text":"Welcome, ","color":"gold"},{"selector":"@s"},{"text":", to Bolt!","color":"gold"}]
 playsound minecraft:entity.firework_rocket.large_blast master @s ~ ~ ~ 1000 0 1
 effect give @s blindness 1 100 true
 
