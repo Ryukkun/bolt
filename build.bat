@@ -12,16 +12,16 @@ git clone -b 1.20.4 https://github.com/Ryukkun/bolt.git bolt_1.20.x
 
 
 cd %~dp0\bolt_1.16.x
-7z a bolt_1.16.x.zip data README.md pack.mcmeta >> NULL
+7z a bolt_1.16.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.17.x
-7z a bolt_1.17.x.zip data README.md pack.mcmeta >> NULL
+7z a bolt_1.17.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.19.x
-7z a bolt_1.19.x.zip data README.md pack.mcmeta >> NULL
+7z a bolt_1.19.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.20.x
-7z a bolt_1.20.x.zip data README.md pack.mcmeta >> NULL
+7z a bolt_1.20.x.zip data README.md pack.mcmeta > nul
 
 
 cd %~dp0
