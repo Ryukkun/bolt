@@ -16,7 +16,7 @@ effect give @s blindness 1 100 true
 
 #id player and store there uuid
 execute store result score @s gm_id run scoreboard players add $players gm_id 1
-execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data merge block ~ ~ ~-2 {Text3:"{\"score\":{\"name\":\"$players\",\"objective\":\"gm_id\"},\"color\":\"yellow\",\"bold\":\"true\"}"}
+execute at @e[type=minecraft:area_effect_cloud,tag=stats,tag=sign] run data modify block ~ ~ ~-2 front_text.messages[2] set value '{"score":{"name":"$players","objective":"gm_id"},"color":"yellow","bold":"true"}'
 
 data modify storage kh:uuids players append from entity @s UUID
 
