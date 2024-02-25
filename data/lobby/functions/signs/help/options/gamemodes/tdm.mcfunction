@@ -1,2 +1,0 @@
-tellraw @s {"text":"\n\n\n\nTeam Deathmatch (TDM)\n","color":"red","bold":true,"underlined":true}
-tellraw @s {"text":"In Team Deathmatch, work together to reach the elimination goal before the other team and claim victory.\n","color":"aqua"}
