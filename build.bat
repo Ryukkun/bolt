@@ -12,15 +12,19 @@ git clone -b 1.20.4 https://github.com/Ryukkun/bolt.git bolt_1.20.x
 
 
 cd %~dp0\bolt_1.16.x
+git pull origin 1.16.5
 7z a bolt_1.16.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.17.x
+git pull origin 1.17.1
 7z a bolt_1.17.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.19.x
+git pull origin 1.19.4
 7z a bolt_1.19.x.zip data README.md pack.mcmeta > nul
 
 cd %~dp0\bolt_1.20.x
+git pull origin 1.20.4
 7z a bolt_1.20.x.zip data README.md pack.mcmeta > nul
 
 
