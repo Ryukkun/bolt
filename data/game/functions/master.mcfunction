@@ -1,7 +1,7 @@
 kill @e[type=item, tag=!freeze_tag_item, nbt=!{Item:{tag:{keepitem:1b}}}]
 
-item replace entity @a[gamemode=adventure,scores={gm_inGame=1}] container.17 with arrow 4
-item replace entity @a[gamemode=adventure,tag=!frozen,scores={gm_inGame=1}] container.0 with bow{Unbreakable:1b}
+item replace entity @a[gamemode=adventure,scores={gm_inGame=1},nbt=!{Inventory:[{Slot:17b,id:"minecraft:arrow",Count:4b}]}] container.17 with arrow 4
+item replace entity @a[gamemode=adventure,tag=!frozen,scores={gm_inGame=1},nbt=!{Inventory:[{Slot:0b,id:"minecraft:bow",Count:1b}]}] container.0 with bow{Unbreakable:1b,HideFlags:1,Enchantments:[{id:"minecraft:infinity",lvl:1s}]}
 
 scoreboard players reset PlayersInGame gm_main
 execute if score gameMode cm_main matches 2 as @a[tag=ingame] run scoreboard players add PlayersInGame gm_main 1
