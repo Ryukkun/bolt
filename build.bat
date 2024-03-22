@@ -33,3 +33,5 @@ move .\bolt_1.16.x\bolt_1.16.x.zip .\
 move .\bolt_1.17.x\bolt_1.17.x.zip .\
 move .\bolt_1.19.x\bolt_1.19.x.zip .\
 move .\bolt_1.20.x\bolt_1.20.x.zip .\
+
+pause
