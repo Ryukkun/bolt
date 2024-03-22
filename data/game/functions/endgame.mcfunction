@@ -59,3 +59,6 @@ schedule function lobby:load_lobby 1t
 
 gamemode adventure @a
 
+#forceload
+forceload remove 1066 -219
+forceload remove 1064 -13
