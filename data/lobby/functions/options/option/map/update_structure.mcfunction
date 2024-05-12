@@ -16,4 +16,4 @@ setblock 20 45 -3 redstone_block
 #3 caverns, Nether
 #4 space
 #5 Nation
-#6 fantasia
+#6 meadow

@@ -22,4 +22,4 @@ execute if score map cm_main matches 2 if score gameMode cm_main matches 2 run t
 #3 cavernns, Nether
 #4 space
 #5 Nation
-#6 fantasia
+#6 meadow

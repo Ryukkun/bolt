@@ -19,7 +19,7 @@ execute if score map cm_main matches 2 unless score gameMode cm_main matches 2 r
 execute if score map cm_main matches 3 unless score gameMode cm_main matches 2 run scoreboard players set §6Caverns lb_display 0
 execute if score map cm_main matches 4 unless score gameMode cm_main matches 2 run scoreboard players set §6Space lb_display 0
 execute if score map cm_main matches 5 unless score gameMode cm_main matches 2 run scoreboard players set §6Nation lb_display 0
-execute if score map cm_main matches 6 unless score gameMode cm_main matches 2 run scoreboard players set §6Fantasia lb_display 0
+execute if score map cm_main matches 6 unless score gameMode cm_main matches 2 run scoreboard players set §6Meadow lb_display 0
 
 #Map (ffa)
 execute if score map cm_main matches 0 if score gameMode cm_main matches 2 run scoreboard players set §6Fuji lb_display 0

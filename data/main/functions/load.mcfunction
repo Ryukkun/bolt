@@ -202,10 +202,10 @@ execute unless score $setup fox_main matches 1 run function main:fox_setup
 # team 当たり判定
 function lobby:options/option/8/update_collision
 
-# Fantasia エンドゲートウェイ
+# Meadow エンドゲートウェイ
 forceload add 1062 -188
 forceload add 1068 -45
-schedule function map:fantasia/set_end_gateway 10s
+schedule function map:meadow/set_end_gateway 10s
 
 # Version表記
 data merge storage fox:main {Version:[[1,4,0],[0,0,3]]}
