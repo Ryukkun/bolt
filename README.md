@@ -40,7 +40,7 @@ Freeze_tag や Capture The Flag などで使用できます。
 　▼ ScreenShots
 |  |  |
 |---|---|
-|![2024-02-21_16 48 15](https://github.com/Ryukkun/bolt/assets/83561145/2862cafb-b55b-4757-8f19-370ec2d2efd0)|![2024-02-21_16 48 56](https://github.com/Ryukkun/bolt/assets/83561145/1a7cf792-904d-4aaa-bbef-cff1670c0aa6)|  
+|![2024-02-21_16 48 15](https://github.com/Ryukkun/bolt/assets/83561145/147fd5aa-23ea-4b48-be01-d5783afc706a)|![2024-02-21_16 48 56](https://github.com/Ryukkun/bolt/assets/83561145/4c6cce56-2248-4991-be53-18b611a16d8b)|  
 
 <br>
 
@@ -49,7 +49,7 @@ Freeze_tag や Capture The Flag などで使用できます。
 初期設定はOFFです。  
 
 　▼ ここで設定を変更できます<br>
- <img src="https://github.com/Ryukkun/bolt/assets/83561145/baf9dc4b-bed6-4950-bbee-eb25474ffcba" width="50%" />  
+ <img src="https://github.com/Ryukkun/bolt/assets/83561145/9bdd8248-9915-407f-96a3-c9246a4b0f24" width="50%" />  
 
 <br>
 
