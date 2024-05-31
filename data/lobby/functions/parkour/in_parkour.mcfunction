@@ -40,8 +40,22 @@ scoreboard players operation ms_split pk_math %= $second pk_math
 scoreboard players operation ms_split pk_math *= $const pk_math
 scoreboard players operation ms_split pk_math /= $second pk_math
 
-title @s actionbar ["",{"text":"Overall time: ","color":"gold"},{"score":{"name":"mins_total","objective":"pk_math"},"color":"green"},{"text":":"},{"score":{"name":"secs_total","objective":"pk_math"},"color":"green"},{"text":"."},{"score":{"name":"ms_total","objective":"pk_math"},"color":"green"},{"text":" Current Section: ","color":"gold"},{"score":{"name":"mins_split","objective":"pk_math"},"color":"green"},{"text":":"},{"score":{"name":"secs_split","objective":"pk_math"},"color":"green"},{"text":"."},{"score":{"name":"ms_split","objective":"pk_math"},"color":"green"}]
+scoreboard players reset secs_total_0 pk_math 
+execute if score secs_total pk_math matches 0..9 run scoreboard players set secs_total_0 pk_math 0
+scoreboard players reset ms_total_0 pk_math 
+execute if score ms_total pk_math matches 0..9 run scoreboard players set ms_total_0 pk_math 0
+scoreboard players reset secs_split_0 pk_math 
+execute if score secs_split pk_math matches 0..9 run scoreboard players set secs_split_0 pk_math 0
+scoreboard players reset ms_split_0 pk_math 
+execute if score ms_split pk_math matches 0..9 run scoreboard players set ms_split_0 pk_math 0
+
+
+title @s actionbar ["",{"text":"Overall time: ","color":"gold"},{"score":{"name":"mins_total","objective":"pk_math"},"color":"green"},{"text":":"},{"score":{"name":"secs_total_0","objective":"pk_math"},"color":"green"},{"score":{"name":"secs_total","objective":"pk_math"},"color":"green"},{"text":"."},{"score":{"name":"ms_total_0","objective":"pk_math"},"color":"green"},{"score":{"name":"ms_total","objective":"pk_math"},"color":"green"},{"text":" Current Section: ","color":"gold"},{"score":{"name":"mins_split","objective":"pk_math"},"color":"green"},{"text":":"},{"score":{"name":"secs_split_0","objective":"pk_math"},"color":"green"},{"score":{"name":"secs_split","objective":"pk_math"},"color":"green"},{"text":"."},{"score":{"name":"ms_split_0","objective":"pk_math"},"color":"green"},{"score":{"name":"ms_split","objective":"pk_math"},"color":"green"}]
 
 #reset and return times
 replaceitem entity @s hotbar.3 lime_terracotta{display:{Name:'{"text":"[Drop] Return To Last Checkpoint","color":"dark_green","bold":true}',Lore:['{"text":"Drop to return to the last checkpoint"}']},ParkourItem:1,Enchantments:[{}]}
 replaceitem entity @s hotbar.5 red_terracotta{display:{Name:'{"text":"[Drop] Reset Progress","color":"dark_red","bold":true}',Lore:['{"text":"Drop to return to the start and reset your timer."}']},ParkourItem:1,Enchantments:[{}]}
+
+
+# checkpoint
+execute as @s[tag=Ryukkun.bolt.nextCP] run function lobby:parkour/checkpoint
