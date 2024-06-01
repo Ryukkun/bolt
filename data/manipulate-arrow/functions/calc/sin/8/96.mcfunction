@@ -1,0 +1,2 @@
+execute if score $_in Ryukkun_temp matches 3374..3389 run scoreboard players set $out Ryukkun_temp 5565
+execute if score $_in Ryukkun_temp matches 3390..3407 run scoreboard players set $out Ryukkun_temp 5590

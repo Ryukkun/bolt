@@ -2,7 +2,8 @@
 # lobby:options/option/5/main | called by lobby:options/option/check
 # @s = player with a options trigger of 5
 
-scoreboard players add ks_pointDropping gm_options 1
-execute if score ks_pointDropping gm_options matches 2.. run scoreboard players set ks_pointDropping gm_options 0
+execute if score gameMode cm_main matches 0..1 run function lobby:options/option/5/capture
+execute unless score gameMode cm_main matches 0..1 run function lobby:options/option/5/not_capture
+
 
 function lobby:options/sign/5/update

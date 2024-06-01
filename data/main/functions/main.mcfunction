@@ -8,6 +8,8 @@ effect give @a weakness 3 6 true
 execute as @e[type=armor_stand,tag=flame] run data merge entity @s {Fire:2s}
 function player_handle:main
 
+execute if score $arrowMode fox_settings matches 1 run function manipulate-arrow:tick
+
 
 ## --- Phase 0 --- Lobby
 execute if score gameState cm_main matches 0 run function lobby:main
