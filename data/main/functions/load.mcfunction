@@ -208,7 +208,7 @@ forceload add 1068 -45
 schedule function map:meadow/set_end_gateway 10s
 
 # Version表記
-data merge storage fox:main {Version:[[1,4,0],[0,0,3]]}
+data merge storage fox:main {Version:[[1,4,0],[0,0,4]]}
 
 
 ### --- Scores --- ###
