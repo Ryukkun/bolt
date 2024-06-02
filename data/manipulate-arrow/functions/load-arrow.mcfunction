@@ -7,7 +7,7 @@ scoreboard players operation @s gm_id = $id kh_mathTacking
 data merge entity @s {NoGravity:1b}
 data merge entity @s {Glowing:1b}
 # 初速計算
-function manipulate-arrow:calc/calc-speed/main
+function manipulate-arrow:calc/calc-speed/
 #team join
 team join Purple @s
 
