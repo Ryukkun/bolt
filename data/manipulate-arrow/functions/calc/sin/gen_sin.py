@@ -19,22 +19,23 @@ for i2 in range(fileCount):
     sin3 = (i2 * 2 + 2) / (fileCount * 2 - 1) * 10000
     angle1 = math.degrees(math.asin(sin1/10000))
     angle2 = math.degrees(math.asin(sin2/10000))
-    angle3 = math.degrees(math.asin(sin3/10000))
+    angle3 = 90 if sin2 == 10000 else math.degrees(math.asin(sin3/10000))
     angle1Min = nextAngle1Min
     angle2Min = round((angle1 + angle2) / 2 * 100)
     angle1Max = angle2Min - 1
     nextAngle1Min = round((angle2 + angle3) / 2 * 100)
-    angle2Max = nextAngle1Min - 1
+    angle2Max = 9000 if sin2 == 10000 else nextAngle1Min - 1
 
     nextLastAngles.extend((angle1Min, angle2Max))
 
     with open(f"./{kaisou-1}/{i2}.mcfunction","w",) as f:
-        f.write(f"execute if score $_in Ryukkun_temp matches {angle1Min}..{angle1Max} run scoreboard players set $out Ryukkun_temp {sin1}\n"+
-                f"execute if score $_in Ryukkun_temp matches {angle2Min}..{angle2Max} run scoreboard players set $out Ryukkun_temp {sin2}"
+        f.write(f"execute if score $_in Ryukkun_temp matches {angle1Min}..{angle1Max} run scoreboard players set $out Ryukkun_temp {round(sin1)}\n"+
+                f"execute if score $_in Ryukkun_temp matches {angle2Min}..{angle2Max} run scoreboard players set $out Ryukkun_temp {round(sin2)}"
                 )
 
 
-for i in range(kaisou-1):
+for i in range(kaisou-1, 0, -1):
+    i -= 1
     os.makedirs(f"./{i}",exist_ok=True)
     fileCount = 2**i
     targetFileNum = 0

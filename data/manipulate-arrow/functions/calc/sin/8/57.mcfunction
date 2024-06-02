@@ -1,2 +1,2 @@
-execute if score $_in Ryukkun_temp matches 2001..2017 run scoreboard players set $out Ryukkun_temp 3435
-execute if score $_in Ryukkun_temp matches 2018..2035 run scoreboard players set $out Ryukkun_temp 3464
+execute if score $_in Ryukkun_temp matches 1283..1294 run scoreboard players set $out Ryukkun_temp 2231
+execute if score $_in Ryukkun_temp matches 1295..1305 run scoreboard players set $out Ryukkun_temp 2250

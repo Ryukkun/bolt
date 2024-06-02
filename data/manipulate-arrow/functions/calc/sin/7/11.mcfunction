@@ -1,2 +1,2 @@
-execute if score $_in Ryukkun_temp matches 771..805 run function manipulate-arrow:calc/sin/8/22
-execute if score $_in Ryukkun_temp matches 806..841 run function manipulate-arrow:calc/sin/8/23
+execute if score $_in Ryukkun_temp matches 488..510 run function manipulate-arrow:calc/sin/8/22
+execute if score $_in Ryukkun_temp matches 511..532 run function manipulate-arrow:calc/sin/8/23
