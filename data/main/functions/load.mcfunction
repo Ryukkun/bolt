@@ -197,7 +197,12 @@ execute unless score setup cm_miscellaneous matches 1.. run function main:setup
 
 ##### Ryukkun #######
 # setup
-execute unless score $setup fox_main matches 1 run function main:fox_setup
+execute unless score $setup fox_main matches 1 store success score $setup fox_main run function main:add_meadow
+
+# スコア初期化
+execute unless score $friendlyFire fox_settings matches -2147483648..2147483647 run scoreboard players set $friendlyFire fox_settings 0
+execute unless score $collisionRule fox_settings matches -2147483648..2147483647 run scoreboard players set $collisionRule fox_settings 0
+execute unless score $arrowMode fox_settings matches -2147483648..2147483647 run scoreboard players set $arrowMode fox_settings 0
 
 # team 当たり判定
 function lobby:options/option/8/update_collision
