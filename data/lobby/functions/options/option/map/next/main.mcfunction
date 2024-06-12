@@ -9,9 +9,6 @@ execute if score gameMode cm_main matches 2 store result storage lobby:map_minis
 execute unless score gameMode cm_main matches 2 if score map cm_main >= teamMapCount cm_main run scoreboard players set map cm_main -1
 execute unless score gameMode cm_main matches 2 store result storage lobby:map_minis Selected.Team int 1 run scoreboard players get map cm_main
 
-
-# execute if score map cm_main matches 0 run function lobby:options/option/map/reset_map_cycle
-
 function lobby:options/sign/map/update
 function lobby:options/option/map/update_structure
 
