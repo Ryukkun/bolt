@@ -17,14 +17,6 @@ bossbar set gm:red visible false
 bossbar set gm:blue visible false
 bossbar set ffa:leader visible false
 
-data merge storage lobby:map_minis {Saved:{Team:["map:mini/mesa","map:mini/ice","map:mini/warehouse","map:mini/caverns","map:mini/space","map:mini/nation"],FFA:["map:mini/fuji","map:mini/tomb","map:mini/neon"]}}
-data merge storage lobby:map_names {Saved:{Team:["Mesa","Ice","Warehouse","Caverns","Space","Nation"],FFA:["Fuji","Tomb","Neon"]}}
-
-data modify storage lobby:map_minis FFA set from storage lobby:map_minis Saved.FFA
-data modify storage lobby:map_names FFA set from storage lobby:map_names Saved.FFA
-data modify storage lobby:map_minis Team set from storage lobby:map_minis Saved.Team
-data modify storage lobby:map_names Team set from storage lobby:map_names Saved.Team
-
 data modify storage lobby:saved_options CTF set value {id:0,name:{Text2:'{"text":"Capture the","bold":true,"color":"green"}',Text3:'{"text":"Flag","bold":true,"color":"green"}'},RespawnTime:3,PointsToWin:3,KeepTeams:1,Nametags:0,PointDropping:0,tabBoard:0,gameTime:-1,killstreaks:1}
 data modify storage lobby:saved_options CTP set value {id:1,name:{Text2:'{"text":"Capture the","bold":true,"color":"dark_aqua"}',Text3:'{"text":"Point","bold":true,"color":"dark_aqua"}'},RespawnTime:3,PointsToWin:100,KeepTeams:1,Nametags:0,PointDropping:0,tabBoard:0,gameTime:-1,killstreaks:1}
 data modify storage lobby:saved_options FFA set value {id:2,name:{Text2:'{"text":"Free for","bold":true,"color":"gold"}',Text3:'{"text":"all","bold":true,"color":"gold"}'},RespawnTime:3,PointsToWin:15,Nametags:0,tabBoard:0,gameTime:-1,killstreaks:1}
