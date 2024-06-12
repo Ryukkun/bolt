@@ -2,10 +2,12 @@
 # lobby:options/option/map/previous/main | called by lobby:options/option/check
 
 scoreboard players remove map cm_main 1
+# ffa
 execute if score gameMode cm_main matches 2 if score map cm_main matches ..-2 run function lobby:options/option/map/previous/ffa
+execute if score gameMode cm_main matches 2 store result storage lobby:map_minis Selected.FFA int 1 run scoreboard players get map cm_main
+# team
 execute unless score gameMode cm_main matches 2 if score map cm_main matches ..-2 run function lobby:options/option/map/previous/team
-
-# execute if score map cm_main matches -1 run function lobby:options/option/map/reset_map_cycle
+execute unless score gameMode cm_main matches 2 store result storage lobby:map_minis Selected.Team int 1 run scoreboard players get map cm_main
 
 
 function lobby:options/sign/map/update
