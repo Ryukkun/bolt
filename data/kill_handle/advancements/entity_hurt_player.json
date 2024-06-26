@@ -6,13 +6,18 @@
         "damage": {
           "source_entity": {
             "type": "minecraft:player"
+          },
+          "type": {
+            "is_projectile": true
+          },
+          "direct_entity": {
+            "type": "minecraft:arrow"
           }
         }
       }
     }
   },
-    "rewards": {
-      "function": "kill_handle:player_hurt"
-    }
+  "rewards": {
+    "function": "kill_handle:entity_hurt_player"
   }
-  
+}
