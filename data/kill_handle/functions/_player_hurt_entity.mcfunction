@@ -8,6 +8,7 @@ execute if score gameMode cm_main matches 3 unless score $friendlyFire fox_setti
 
 ## run function
 execute as @s[tag=!fox_break] run scoreboard players operation @p[tag=fox_hurtByPlayer] kh_killedby = @s gm_id
+execute as @s[tag=!fox_break] run tag @p[tag=fox_hurtByPlayer] add arrow_kill
 execute as @s[tag=!fox_break] as @p[tag=fox_hurtByPlayer] at @s run function kill_handle:killed/main
 tag @s[tag=fox_break] remove fox_break
 tag @a[tag=fox_hurtByPlayer] remove fox_hurtByPlayer
