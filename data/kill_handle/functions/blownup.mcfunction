@@ -1,6 +1,6 @@
 # Called when a player has been blowup
 # kill_handle:blownup | called by advancement
-# @s = player who was blowup
+# as = at = player who was blowup
 tag @s add blownup
 advancement revoke @s only kill_handle:blownup
 

@@ -1,3 +1,4 @@
+#> kill_handle:_player_hurt_entity
 # playerを矢で射抜いたときに実行
 # @s = 矢で射抜いたプレイヤー
 

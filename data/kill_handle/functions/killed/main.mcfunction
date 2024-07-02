@@ -1,8 +1,7 @@
 #> kill_handle:killed/main
 # Called when a player has been killed
-# kill_handle:killed/main | called from kill_handle:main & kill_handle:blownup
-# @s = player who was killed
-# as = at = @a[advancements={kill_handle:root=true}]
+# kill_handle:killed/main | called from kill_handle:_player_hurt_entity & kill_handle:blownup
+# as = at = player who was killed
 
 #handles killing
 execute as @s[scores={kh_killedby=1..},tag=!shielded,tag=!respawned] unless score gameMode cm_main matches 3 at @s run function kill_handle:killed/killed
