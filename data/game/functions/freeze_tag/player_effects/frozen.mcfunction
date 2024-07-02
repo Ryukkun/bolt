@@ -1,9 +1,11 @@
 # called as a player who is frozen
 # game:freeze_tag/player_effects/frozen | Caled from game:freeze_tag/main
-# @s = frozen player
+# as = at = frozen player
 
 # standard effects
-execute at @e[type=minecraft:armor_stand,distance=..5,tag=freeze] if score @e[distance=..0.0001,limit=1,type=minecraft:armor_stand] gm_id = @s gm_id unless entity @s[distance=..0.1] run tp @s ~ ~ ~
+tag @s add freeze_mark
+execute as @e[type=minecraft:armor_stand,distance=..10,tag=freeze] if score @s gm_id = @p[tag=freeze_mark,distance=0] gm_id unless entity @s[distance=..0.1] positioned as @s run tp @p[tag=freeze_mark] ~ ~ ~
+tag @s remove freeze_mark
 effect give @s[scores={cm_hunger=..4}] saturation 1 0 true
 effect give @s jump_boost 1 128 true
 
